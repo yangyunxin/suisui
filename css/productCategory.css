@@ -1,0 +1,95 @@
+/*
+* @Author: yangyunxin
+* @Date:   2016-03-25 16:42:31
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-03-26 14:41:50
+*/
+/*顶部导航*/
+.content {background-color: transparent;background: url(../images/online_food_bg.jpg) repeat-y;}
+.content .nav {background: url(../images/top_nav_bg.png) repeat-x;position: relative;z-index: 9;}
+.content .nav ul {display: block;left: 0;}
+/*.category {width: 100%;height:130px;background-color: #ffd012;position: relative;top:-30px;}*/
+
+/*商品分类*/
+.category {width: 100%;height:105px;background: url(../images/category_bg.png) center top no-repeat;margin-top: -6px;}
+.category_center {width: 100%;height: 105px;position: relative;}
+.category_center ul li {float:left;width: 133px;background-color: #ffd012;height: 127px;position: relative;top: -22px;}
+.category_center ul li.last {width: 136px;}
+.category_center ul li .circle_bottom {position: absolute;bottom: -2px;left: 0;width: 133px;height: 21px;background: url(../images/category_bottom.png) left top no-repeat;}
+.category_center .cate_des {position: absolute;bottom: 26px;left: 0;width: 100%;text-align: center;}
+.category_center .cate_des i {width: 80px;height: 40px;display: inline-block;background: url(../images/online_food.png) no-repeat;}
+.category_center .cate_des i.meat {background-position: -28px -46px;}
+.category_center .cate_des i.pot {background-position: -161px -46px;}
+.category_center .cate_des i.ball {background-position: -294px -46px;}
+.category_center .cate_des i.seafood {background-position: -420px -46px;}
+.category_center .cate_des i.beans {background-position: -558px -46px;}
+.category_center .cate_des i.fruits {background-position: -692px -46px;}
+.category_center .cate_des i.swamm {background-position: -826px -46px;}
+.category_center .cate_des i.skewer {background-position: -958px -46px;}
+.category_center .cate_des i.staple {background-position: -1090px -46px;}
+.category_center .cate_des p {text-align: center;color: #272636;font-size: 12px;line-height: 20px;}
+
+/*商品列表*/
+.foods_list {display: none;}
+.show {display: block;}
+.foods_list .center_1200 {background-color: #fff;padding: 82px 42px 100px 47px;width: 1111px;}
+.foods_list .title {text-align: center;color: #444444;margin-bottom: 35px;}
+.foods_list .title h4 {font-size: 40px;line-height: 50px;font-weight: normal;}
+.foods_list .title .four_line {height: 4px;width: 81px;background-color: #444444;margin: 15px auto 10px;}
+.foods_list .title p {line-height: 36px;}
+.foods_items ul {width: 1200px;}
+.foods_items li {position: relative;float: left;width: 350px;height:428px;margin-right: 30px;margin-bottom: 20px;border-radius: 8px;}
+.foods_items li img {border-radius: 8px 8px 0 0;}
+.item_bottom {height: 57px;width: 310px;padding: 10px 20px;position: absolute;left:0;bottom: 0;background-color: #ffcd00;color: #444444;border-radius: 0 0 8px 8px;}
+.item_bottom strong {float:left;font-size: 28px;font-weight: normal;}
+.item_bottom em {float: right;font-size: 24px;font-weight: normal;margin-top: 5px;}
+.descrip_bottom {font-size: 12px;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;line-height: 30px;}
+.foods_items li:hover .item_bottom {color: #fff;background-color:#ba0c2f;}
+
+/*预约*/
+.order_foods {padding-top: 44px;padding-bottom: 20px;background-color: #ffffff;padding-left: 50px;width: 1150px;height:279px;background:url(../images/order_foods_bg.png) left top repeat-x;margin-top: -6px;}
+.order_demand {width: 675px;}
+.shop_address {width: 475px;padding-top: 10px;}
+.order_demand .title {width: 370px;}
+.order_demand .title h4 {width: 170px;height: 28px;background: url(../images/order_top.jpg) left top no-repeat;}
+.order_demand .title p {font-size: 16px;line-height: 36px;color: #92907c;}
+.order_demand .title p em {font-size: 12px;color: #ba0c2f;padding-left: 8px;}
+.order_demand .consult {margin-right: 65px;width: 200px;text-align: right;}
+.order_demand .consult .online_ask {padding: 7px 12px;font-size: 14px;line-height: 20px;background-color: #fd8200;color: #fff;border-radius: 3px;}
+.order_demand .consult .weixin {display: inline-block;width: 44px;height: 31px;background: url(../images/weixin.png) left top no-repeat;vertical-align: bottom;}
+.input_list {font-size: 0;margin-bottom: 15px;}
+.input_list input {width: 284px;height: 38px;border: 1px solid #7e7e7e;padding-left: 12px;color: #92907c;margin-bottom: 14px;margin-right: 13px;background-color: #fff6e6;}
+.input_list input:focus {border: 1px solid #ba0c2f;}
+.input_list input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #92907c;  
+}
+.input_list input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #92907c;
+}
+.input_list input:-ms-input-placeholder {
+	color: #92907c;
+}
+.input_list input::-webkit-input-placeholder {
+	color: #92907c;
+}
+.order_num {width: 284px;border: 1px solid #7e7e7e;cursor: pointer;margin-right: 13px;padding-left: 12px;height: 38px;position: relative;font-size: 14px;}
+.order_num p {height: 38px;line-height: 38px;color: #92907c;}
+.common_select ul {position: absolute;top: 39px;left: -1px;display: block;width: 100%;display: none;background: #fff6e6;border: 1px solid #7e7e7e;border-top: 0;}
+.common_select ul li {line-height: 38px;border-bottom: 1px solid #7e7e7e;color: #92907c;text-indent: 10px; }
+.select_con {position: absolute;right: 0;top: 0;width: 30px;background-color: #7e7e7e;height: 38px;text-align: center;}
+.select_con .triangle {border: 7px solid transparent;border-top-color: #fff;width: 0;height: 0;display: inline-block;margin-top: 18px;}
+.order_foods .send button {height: 32px;border-radius: 3px;line-height: 32px;width: 114px;background-color: #7e7e7e;color: #f2f1e8;border: 0;font-size: 16px;}
+.order_foods .send span {color: #92907c;padding-left: 15px;font-size: 12px;}
+.shop_address .map_icon {display: block;width: 21px;height: 29px;background: url(../images/map_icon.png) left top no-repeat;}
+.shop_address .map_des {margin-left: 10px;}
+.shop_address .map_des h5 {font-size: 16px;line-height: 20px;color: #7e7e7e;}
+.shop_address .map_des p {font-size: 12px;line-height: 20px;color: #92907c;}
+.shop_address .map_des p span {margin-left: 15px;letter-spacing: 1px;}
+.shop_address li {padding: 10px 0 10px 18px;position: relative;height: 40px;overflow: hidden;}
+.shop_address .map_bg {padding: 10px 0 10px 18px;position: relative;height: 40px;width: 455px;background-color: #7e7e7e;border-radius: 60px 0 0 60px;position: absolute;top: 0;right: -475px;z-index: 0;}
+.shop_address .map_bg .map_des h5 {color: #fff;}
+.shop_address .map_bg .map_des p {color: #fff;}
+.shop_address .map_bg .map_icon {background: url(../images/map_icon_hover.png) left top no-repeat;}
+.shop_address .bottom_line {height: 1px;width: 384px;background-color: #d3cdbc;margin-left: 40px;}
+.shop_address .look_more {text-align: right;margin-right: 40px;}
+.shop_address .look_more a {font-size: 12px;line-height: 20px;color: #92907c;}

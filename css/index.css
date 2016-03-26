@@ -1,0 +1,26 @@
+/*内容部分*/
+.main {overflow: hidden;}
+
+/*背景图*/
+.content{width: 100%;position: relative;background-color: #fff;}
+.content_bg {height: 757px;}
+.content_left_wrap {position: absolute;top: 50px;left:0;width: 50%;height: 757px;}
+.content_left {position: absolute;top:0;right:0;width:150px;height:100%;background: url(../images/content_bg_left.jpg) right top no-repeat;overflow: visible !important;}
+.reel_left {position: absolute;z-index:999;left: 0px;top: -50px;width: 138px;height: 915px;background: url(../images/reel_left.png) left top no-repeat;}
+
+.content_right_wrap {position: absolute;top: 50px;right:0;width: 50%;height: 757px;}
+.content_right {position: absolute;top:0;left:0;width:150px;height:100%;background: url(../images/content_bg_right.jpg) left top no-repeat;overflow: visible !important;}
+.reel_right {position: absolute;z-index:999;right: 0;top: -50px;width: 138px;height: 915px;background: url(../images/reel_right.png) right top no-repeat;}
+
+/*岁岁羊文化简介框*/
+.content .content_Box{position: absolute;top:395px;left: 75%;display: none;}
+.content .content_Box_active{position: absolute;top:400px;left:55%;}
+.content .content_Box a{display: block;height: 50px;margin-top: 10px;text-align: center;line-height: 50px;width: 250px;border:1px solid #907755;color: #907755;-webkit-transition:color 1s;position: relative;}
+.content .content_Box a span{display: block;position: absolute;width: 0px;height: 0px;}
+.content .content_Box a span.span_l{position: absolute;left: -1px;top: -1px;width: 1px;height: 0;background-color: #000;}
+.content .content_Box a span.span_t{position: absolute;left: 0;top: -1px;width: 0;height: 1px;background-color: #000;}
+.content .content_Box a span.span_r{position: absolute;right: -1px;bottom: -1px;width: 1px;height: 0;background-color: #000;}
+.content .content_Box a span.span_b{position: absolute;right: 0;bottom: -1px;width: 0;height: 1px;background-color: #000;}
+.content .content_Box a span.span_active{width: 250px;height: 50px;}
+
+.content .content_Box a:hover{background-color: #FABE00;box-shadow: 3px 3px 3px #4B3927;color:#000;border:1px solid #FABE00;}

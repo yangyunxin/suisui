@@ -1,0 +1,246 @@
+/*
+* @Author: yangyunxin
+* @Date:   2016-03-24 14:53:39
+* @Last Modified by:   Administrator
+* @Last Modified time: 2016-03-26 15:58:47
+* @description 公共样式库
+*/
+/*公共库类样式*/
+.clearfix {}
+.clearfix:before,.clearfix:after {content: "";display: table;}
+.clearfix:after {clear: both;}
+.left {float: left;}
+.right {float: right;}
+.center_1200 {width: 1200px;margin: 0 auto;}
+.show {display: block;}
+.hide {display: none;}
+
+/*公共页面内容*/
+body{font-family: "微软雅黑";font-size: 14px;background-color: #FFFFFF;}
+a{color: black;text-decoration: none;}
+.header_wrap {background-color: #fff;width: 100%;min-width: 1200px;}
+#header{height: 100px;}
+/*头部logo的样式*/
+#header .logo{width:360px;height:100px;float: left;margin-left: 40%;}
+#header .logo img{width: 100%;height: 100%;}
+/*头部登陆注册的样式*/
+#header .header_L{float:right;margin-top: 40px;position: relative;width: 200px;}
+#header .header_L a{display:block;float:left;width: 46px;text-align: center;}
+#header .header_L a:hover{color: #fa7c00;text-decoration: underline;}
+.box_weixin{height: 15px;overflow: hidden;position: absolute;left: 82px;top:3px;overflow: hidden;}
+.box_weixin a{display: block;width: 15px;height: 15px;}
+.box_weixin a img{width: 15px;height: 15px;}
+.box_weixin .Weixin_Box{top:25px;left: 0px;background-color: white;border:1px solid #a3a3a3;padding: 13px;position: absolute;z-index: 9999;}
+#header .header_L .Weixin_Box:before{
+	content:"";
+	position: absolute;
+	top: -12px;
+	left:18px;
+	z-index: 9999;
+	width:0;
+    height:0;   
+    border:6px solid transparent;  
+    border-bottom-color:#a3a3a3;   
+}
+#header .header_L a .Weixin_Box p{color: #a3a3a3;font-size: 10px;}
+/*主题内容*/
+.content{width: 100%;position: relative;background-color: #fff;}
+
+/*导航样式*/
+.nav {background: #000000;width: 100%;height: 50px;min-width: 1200px;overflow: hidden;}
+.nav ul{margin: 0 auto;width: 930px;height: 50px;display: none;position: relative;left: -200px;}
+.nav ul li{list-style: none; float: left;padding: 0 33px;line-height:50px;height:50px;text-align: center;overflow: hidden;}
+.nav ul li a{display: inline-block;width: 100%;height: 100%;color: #A98E67;letter-spacing: 2px;}
+.nav ul li .word_wrap {height: 100px;width: 100%;position: relative;}
+.nav ul li em,.nav ul li span {display: block;}
+.nav ul li em {color: #fff;font-style: normal;}
+
+/*尾部样式*/
+#footer{height: 115px;width: 100%;background-color: #292929}
+.foot_Box{width: 1200px;margin: 0 auto;}
+.footCopy{width: 570px;float: left;font-size: 12px;}
+.footCopy p{color: #a3a3a3;line-height: 25px;height: 25px;}
+.footCopy p.one{padding-top: 40px;}
+.footCopy p a{display: block;height: 14px;line-height: 14px;float: left;margin-right: 10px; padding-right: 10px;border-right: 1px solid #868686; color: #868686;}
+.tel{float: right;padding-top: 40px;}
+.tel div{display: inline-block;color: #a3a3a3;}
+.tel div.hot_line{width: 40px;text-align: center;font-size: 10px;}
+.tel div.phone{font-size: 28px;height: 50px;margin-top: -20px;}
+
+/* 固定部分 */
+.fix-footer{
+	height: 116px;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.8);
+}
+.fix-footer .fix-img{
+	position: relative;
+	width: 730px;
+	height: 116px;
+	float: left;
+}
+.fix-footer .fix-form{
+	padding: 20px 10px 0px 10px;
+	width: 335px;
+	height: 96px;
+	float: right;
+	position: relative;
+}
+.fix-form button{
+	display: block;
+	width: 34px;
+	height: 34px;
+	background-size: 100%;
+	border: none;
+	outline: none;
+	background: url(../images/fix-close.png) no-repeat center center;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.fix-img img{
+	position: absolute;
+	bottom: 0;
+	left: -155px;
+}
+.fix-form i{
+	display: block;
+	float: left;
+	height: 33px;
+	width: 38px;
+	border: 1px solid #E5E5E5;
+	border-right: none;
+	border-radius: 3px 0px 0 3px;
+	overflow: hidden;
+	background-size: 100%;
+}
+.fix-form .lineone{
+	height: 35px;
+	margin-bottom: 7px;
+}
+.fix-form .lineone input{
+	width: 220px;
+	height: 33px;
+	display: block;
+	float: left;
+	border: 1px solid #E5E5E5;
+	border-radius: 0px 3px 3px 0;
+	text-indent: 1em;
+}
+.fix-form .lineone i{
+	background: url(../images/fix-iphone-icon.png) no-repeat center center;
+}
+.fix-form .linetwo{
+	height: 35px;
+}
+.fix-form .linetwo i{
+	background: url(../images/fix-people.png) no-repeat center center;
+}
+.fix-form .linetwo input{
+	display: block;
+	float: left;
+	text-indent: 1em;
+} 
+.fix-form .linetwo input[type=text]{
+	width: 114px;
+	height: 33px;
+	border: 1px solid #E5E5E5;
+	border-radius: 0px 3px 3px 0;
+}
+.fix-form .linetwo input[type=submit]{
+	width: 95px;
+	height: 35px;
+	color: #fff;
+	border:none;
+	outline: none;
+	background: #FFA800;
+	border-radius: 3px;
+	margin-left: 12px;
+}
+/* 固定部分侧栏 */
+.fix-sidebar{
+	width: 50px;
+	height: 200px;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -100px;
+	background: #525252;
+	border-radius: 10px 0 0 10px;
+}
+.fix-side li{
+	width: 50px;
+	height: 50px;
+	position: relative;
+}
+.fix-side li i{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 10px;
+	overflow: hidden;
+	background-image: url(../images/fix-icon.png);
+	background-repeat: no-repeat;
+	cursor: pointer;
+	z-index: 99;
+}
+.fix-side li:hover i{
+	background-image: url(../images/fix-icon-hover.png);
+}
+.fix-side li.qq i{
+	background-position: 0px 0px;
+}
+.fix-side li.phone i{
+	background-position: 0px -50px;
+}
+.fix-side li.weixin i{
+	background-position: 0px -100px;
+}
+.fix-side li.top i{
+	background-position: 0px -150px;
+}
+.fix-slideIn{
+	position: absolute;
+	background-color: #525252;
+	height: 132px;
+	width: 135px;
+	padding-right: 10px;
+	padding-left: 20px;
+	padding-top: 18px;
+	padding: 18px 10px 0 20px;
+	border-radius: 10px 0 0 10px;
+	color: #fff;
+	right: -165px;
+	z-index: 1;
+}
+.fix-slideIn a{
+	color: #fff;
+}
+.fix-slideIn span,.fix-slideIn strong{
+	display: block;
+}
+.fix-slideIn span{
+	font: 12px/28px "微软雅黑";
+	height: 28px;
+}
+.fix-slideIn strong{
+	margin-top: 13px;
+	height: 35px;
+	width: 100px;
+	border: 1px solid #FFD012;
+	border-radius: 5px;
+	background: url(../images/qqbg.png) center center no-repeat;
+}
+.fix-side li.qq .fix-slideIn{
+	top: 0;
+}
+.fix-side li.phone .fix-slideIn{
+	top: -50px;
+}
+.fix-side li.weixin .fix-slideIn{
+	top: -100px;
+}
